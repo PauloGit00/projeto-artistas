@@ -113,14 +113,13 @@ section.ken h1 {
 }
 
 section.ken p {
-    background-color: rgba(255, 255, 255, 0.671);
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 section.carti {
     padding: 20px;
     border-radius: 10px;
-    background: black url(https://i.pinimg.com/736x/ed/91/f1/ed91f1ce1653441953badde93498d0a9.jpg) right center no-repeat;
+    background: black url(https://i.pinimg.com/736x/ed/91/f1/ed91f1ce1653441953badde93498d0a9.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -129,8 +128,8 @@ section.carti h1 {
 }
 
 section.carti p {
-    background-color: rgba(255, 255, 255, 0.863);
-    color: black;
+    background-color: rgba(255, 255, 255, 0.11);
+    color: rgb(255, 255, 255);
 }
 
 section h1 {
@@ -139,6 +138,7 @@ section h1 {
 }
 
 section p {
+    margin-left: 40px;
     font-family: var(--font-p);
     line-height: 2em;
     border-radius: 7px 7px 0px 0px;
@@ -147,7 +147,7 @@ section p {
     max-width: 400px;
     min-width: 100px;
     max-height: auto;
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color: rgba(0, 0, 0, 0.329);
 }
 
 section p.borda {
