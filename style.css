@@ -74,7 +74,7 @@ main {
 main h1 {
     font-family: var(--font-principal);
     padding: 5vh;
-    font-size: 5vw;
+    font-size: 7vh;
     display: inline-block;
 }
 
@@ -103,8 +103,13 @@ section.ken {
 
 section.ken h1 {
     color: white;
-    font-size: auto;
     padding: 5vh;
+}
+
+@media (max-width: 356px) {
+    section h1 {
+        font-size: 7vw;
+    }
 }
 
 section.ken p {
@@ -130,7 +135,7 @@ section.carti p {
 
 section h1 {
     color: black;
-    font-size: 7vh;
+    font-size: 9vw;
 }
 
 section p {
