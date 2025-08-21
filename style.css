@@ -19,7 +19,7 @@
 
 body {
     background-color: var(--cor2);
-    font-family: sans-serif;
+    font-family: var(--font-p);
 }
 header {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
@@ -40,12 +40,18 @@ header div {
     margin: 10px;
 }
 picture {
-    display: flex;
     gap: 10px;
 }
 
 div img {
+    display: flex;
+    flex-direction: column;
     border-radius: 150px;
+}
+
+div img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 708px) {
@@ -63,10 +69,13 @@ div h2 {
 }
 
 main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     color: white;
     background-color: var(--cor2);
-    min-width: 320px;
-    max-width: 1400px;
+    min-width: 400px;
+    max-width: 2000px;
     min-height: auto;
     margin: auto;
 }
@@ -91,7 +100,7 @@ section.don {
 }
 
 section.don p {
-    border-radius: 7px 7px 0px px;
+    border-radius: 7px 7px 0px 0px;
 }
 
 section.ken {
@@ -119,12 +128,13 @@ section.ken p {
 section.carti {
     padding: 20px;
     border-radius: 10px;
-    background: black url(https://i.pinimg.com/736x/ed/91/f1/ed91f1ce1653441953badde93498d0a9.jpg)  center center no-repeat;
+    background: black url(https://i.pinimg.com/736x/ed/91/f1/ed91f1ce1653441953badde93498d0a9.jpg)  right center no-repeat;
     background-size: cover;
 }
 
 section.carti h1 {
     color: white;
+    font-size: 4.7vw;
 }
 
 section.carti p {
@@ -134,7 +144,7 @@ section.carti p {
 
 section h1 {
     color: black;
-    font-size: 9vw;
+    font-size: 5vw;
 }
 
 section p {
@@ -146,7 +156,6 @@ section p {
     padding: 10px;
     max-width: 400px;
     min-width: 100px;
-    max-height: auto;
     background-color: rgba(0, 0, 0, 0.329);
 }
 
