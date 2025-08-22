@@ -14,6 +14,8 @@
 * {
     margin: 0px;
     padding: 0px;
+
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -25,6 +27,7 @@ header {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     text-align: center;
     padding: 20px;
+    
 }
 header h1 {
     font-family: var(--font-principal);
@@ -44,11 +47,8 @@ picture {
 }
 
 div img {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.205);
-    display: flex;
-    flex-direction: column;
     border-radius: 150px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 div img:hover {
@@ -56,11 +56,6 @@ div img:hover {
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
 }
 
-@media (max-width: 708px) {
-    div img {
-        width: auto;
-    }
-}
 
 div h2 {
     font-family: var(--font-principal);
@@ -115,11 +110,6 @@ section.ken h1 {
     padding: 5vh;
 }
 
-@media (max-width: 356px) {
-    section h1 {
-        font-size: 7vw;
-    }
-}
 
 section.ken p {
     color: rgb(255, 255, 255);
@@ -147,6 +137,7 @@ section h1 {
 }
 
 section p {
+    
     margin-left: 40px;
     font-family: var(--font-p);
     line-height: 2em;
@@ -160,8 +151,10 @@ section p {
 
 section p.borda {
     border-radius: 0px 0px ;
-
+    
 }
+
+/*Rodapé*/
 
 footer {
     background-color: var(--cor1);
@@ -172,9 +165,26 @@ footer p {
     font-size: 20px;
     margin-top: 20px;
     padding: 20px;
+    padding-bottom: 0px;
     color: white;
     text-align: center;
 }
 
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 40px;
+    margin: 10px;
+}
+
+/*Responsividade*/
+@media (max-width: 356px) {
+    section h1 {
+        font-size: 7vw;
+    }
+}
 
 
